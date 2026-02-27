@@ -1,6 +1,6 @@
 import Reveal from "../components/motion/Reveal";
 
-import clive from "../assets/businessOwners/clive.jpg";
+import clive from "../assets/businessOwners/Clive.jpg";
 import munesu from "../assets/businessOwners/munesu.jpeg";
 
 export default function About() {
