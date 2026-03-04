@@ -223,7 +223,7 @@ function PortfolioCard({ title, subtitle, slides, stack }) {
             <AnimatePresence>
               {isOpen ? (
                 <motion.div
-                  className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 px-6 sm:px-10 lg:px-16 py-2 sm:py-3"
+                  className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 px-1 sm:px-10 lg:px-16 py-1 sm:py-3"
                   role="dialog"
                   aria-modal="true"
                   initial={shouldReduceMotion ? false : { opacity: 0 }}
@@ -236,7 +236,7 @@ function PortfolioCard({ title, subtitle, slides, stack }) {
                   }}
                 >
                   <motion.div
-                    className="relative rounded-2xl border border-white/15 bg-black/35 p-[10px] shadow-2xl backdrop-blur-xl"
+                    className="relative w-[98vw] rounded-2xl border border-white/15 bg-black/35 p-1 shadow-2xl backdrop-blur-xl sm:w-auto sm:p-[10px]"
                     initial={
                       shouldReduceMotion
                         ? false
@@ -259,35 +259,69 @@ function PortfolioCard({ title, subtitle, slides, stack }) {
                     <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/10" />
                     <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 via-transparent to-white/5 opacity-60" />
                     <div
-                      className="absolute left-[10px] right-[10px] top-[10px] z-10 flex items-center justify-between"
+                      className="absolute left-1 right-1 top-1 z-10 flex items-center justify-between sm:left-[10px] sm:right-[10px] sm:top-[10px]"
                       onClick={(e) => e.stopPropagation()}
                     >
                       <button
                         type="button"
                         aria-label="Previous slide"
-                        className="rounded-lg border border-white/15 bg-black/40 px-3 py-2 text-xs text-white backdrop-blur-xl transition hover:bg-black/60"
+                        className="rounded-lg border border-white/15 bg-black/40 p-1.5 text-xs text-white backdrop-blur-xl transition hover:bg-black/60 sm:px-3 sm:py-2"
                         onClick={(e) => {
                           e.stopPropagation();
                           setIndex((i) => i - 1);
                         }}
                       >
-                        Prev
+                        <span className="sm:hidden" aria-hidden="true">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15 6L9 12L15 18"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </span>
+                        <span className="hidden sm:inline">Prev</span>
                       </button>
 
-                      <div className="inline-flex rounded-full border border-white/15 bg-black/40 px-3 py-2 text-[11px] text-zinc-100 backdrop-blur-xl">
+                      <div className="inline-flex rounded-full border border-white/10 bg-black/30 px-2 py-1 text-[10px] font-medium tabular-nums text-zinc-100 backdrop-blur-xl sm:border-white/15 sm:bg-black/40 sm:px-3 sm:py-2 sm:text-[11px]">
                         {safeIndex + 1}/{slides.length}
                       </div>
 
                       <button
                         type="button"
                         aria-label="Next slide"
-                        className="rounded-lg border border-white/15 bg-black/40 px-3 py-2 text-xs text-white backdrop-blur-xl transition hover:bg-black/60"
+                        className="rounded-lg border border-white/15 bg-black/40 p-1.5 text-xs text-white backdrop-blur-xl transition hover:bg-black/60 sm:px-3 sm:py-2"
                         onClick={(e) => {
                           e.stopPropagation();
                           setIndex((i) => i + 1);
                         }}
                       >
-                        Next
+                        <span className="sm:hidden" aria-hidden="true">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9 6L15 12L9 18"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </span>
+                        <span className="hidden sm:inline">Next</span>
                       </button>
                     </div>
 
@@ -300,7 +334,7 @@ function PortfolioCard({ title, subtitle, slides, stack }) {
                     />
 
                     <div
-                      className="absolute bottom-[10px] left-[10px] right-[10px] z-10"
+                      className="absolute bottom-[10px] left-[10px] right-[10px] z-10 hidden sm:block"
                       onClick={(e) => e.stopPropagation()}
                     >
                       <div className="rounded-xl border border-white/15 bg-black/45 px-4 py-3 text-left backdrop-blur-xl">

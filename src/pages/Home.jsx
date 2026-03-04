@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="mt-2 text-sm text-zinc-200">
                   “Fast, clean delivery. The MVP shipped on schedule and didn’t fall apart in production.”
                 </div>
-                <div className="mt-4 text-xs tracking-[0.25em] text-zinc-400">LOREM / UK</div>
+                <div className="mt-4 text-xs tracking-[0.25em] text-zinc-400">CLIENT / UK</div>
               </div>
             </Reveal>
             <Reveal delay={0.05}>
@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="mt-2 text-sm text-zinc-200">
                   “Automation saved hours weekly. The internal dashboard gave us visibility instantly.”
                 </div>
-                <div className="mt-4 text-xs tracking-[0.25em] text-zinc-400">LOREM / UK</div>
+                <div className="mt-4 text-xs tracking-[0.25em] text-zinc-400">CLIENT / UK</div>
               </div>
             </Reveal>
             <Reveal delay={0.1}>
@@ -108,7 +108,7 @@ export default function Home() {
                 <div className="mt-2 text-sm text-zinc-200">
                   “Clear comms, strong design sense, and solid engineering. Would 100% repeat.”
                 </div>
-                <div className="mt-4 text-xs tracking-[0.25em] text-zinc-400">LOREM / UK</div>
+                <div className="mt-4 text-xs tracking-[0.25em] text-zinc-400">CLIENT / UK</div>
               </div>
             </Reveal>
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
                   <div className="text-xs tracking-[0.25em] text-zinc-300">FEATURED OUTCOME</div>
                   <div className="mt-2 text-lg font-semibold">A clean MVP that your team can actually run</div>
                   <div className="mt-2 text-sm text-zinc-300">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. We focus on the first version that delivers value.
+                    We focus on the first version that delivers value — a usable workflow, a reliable admin surface, and data you can trust to make decisions.
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="cm-chip">Auth</span>
@@ -177,7 +177,7 @@ export default function Home() {
               <div className="cm-card cm-card-hover p-6">
                 <div className="text-sm font-semibold">01. Discovery</div>
                 <div className="mt-2 text-sm text-zinc-300">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+                  We align on the goal, map the workflow, and define success metrics. You get a tight scope, milestones, and a clear plan to ship.
                 </div>
               </div>
             </Reveal>
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="cm-card cm-card-hover p-6">
                 <div className="text-sm font-semibold">02. Build</div>
                 <div className="mt-2 text-sm text-zinc-300">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                  We design and implement in short cycles — UX, API, database, and automation — with weekly progress you can review.
                 </div>
               </div>
             </Reveal>
@@ -193,7 +193,7 @@ export default function Home() {
               <div className="cm-card cm-card-hover p-6">
                 <div className="text-sm font-semibold">03. Launch</div>
                 <div className="mt-2 text-sm text-zinc-300">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                  We deploy, validate, and stabilise. Then we iterate with analytics and feedback — improving speed, reliability, and user adoption.
                 </div>
               </div>
             </Reveal>
